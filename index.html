@@ -6,53 +6,159 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Website Project</title>
     <link rel="stylesheet" href="./resources/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Rubik:ital,wght@0,300;0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/Website-project/resources/css/all.css" />
   </head>
   <body>
-    <!-- nav section -->
-    <nav class="navbar">
-      <ul>
-        <li><a class="blue" href="">About Me</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a href="">Contact information</a></li>
-      </ul>
-    </nav>
-    <!-- introduction -->
-    <div class="banner">
-      <h1>Welcome To My Website</h1>
-      <img id="smallImage" src="./resources/images/image.jpg" alt="" />
-      <p>
-        Adaptable current Georgia Tech undergraduate with 2+ years of work
-        experience and a proven knowledge of advance technology. Aiming to
-        leverage my abilities to successfully fill the Computer Science
-        Internship role at your company. Frequently praised as hard-working by
-        my peers, I can be relied upon to help your company achieve its goals.
-      </p>
-      <button>Press if you want to know more about me</button>
-    </div>
-    <!-- More information -->
-    <div class="more-information">
-      <span class="bold" id="Me">Me</span>
-      <p class="bold">Social Media</p>
-      <form action="">
-        <input type="text" />
-        <input type="submit" value="Submit" />
-      </form>
-      <div id="greets">
-        <ul>
-          <li>
-            <div class="avatar"></div>
-            <span>Hey, its Derrick</span>
-          </li>
-          <li>
-            <div class="avatar"></div>
-            <span>Hey, its Derrick</span>
-          </li>
-          <li>
-            <div class="avatar"></div>
-            <span>Hey, its Derrick</span>
-          </li>
-        </ul>
+    <section class="header">
+      <nav>
+        <a href="index.html"
+          ><img src="./resources/images/revised DY logo.png"
+        /></a>
+        <!-- Navagation links -->
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About me</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Contact Info</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>Information About Me Holder</h1>
+        <p>Information Holder</p>
+        <a href="" class="btn">LinkHolder</a>
       </div>
-    </div>
+    </section>
+    <!-- course -->
+    <section class="course">
+      <h1>Information</h1>
+      <p>paragraph holder</p>
+      <div class="row">
+        <div class="course-col">
+          <h3>Starter</h3>
+          <p>
+            InformationInformationInformationInformation
+            InformationInformationInformationInformation
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Next</h3>
+          <p>
+            InformationInformationInformationInformation
+            InformationInformationInformationInformation
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Last</h3>
+          <p>
+            InformationInformationInformationInformation
+            InformationInformationInformationInformation
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="campus">
+      <h1>Our global Campus</h1>
+      <p>title description</p>
+      <div class="row">
+        <div class="campus-col">
+          <img src="./resources/images/image.jpg" />
+          <div class="layer">
+            <h3>London</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="./resources/images/image.jpg" />
+          <div class="layer">
+            <h3>London</h3>
+          </div>
+        </div>
+        <div class="campus-col">
+          <img src="./resources/images/image.jpg" />
+          <div class="layer">
+            <h3>London</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- facilities -->
+    <section class="facilities">
+      <h1>facilities</h1>
+      <p>description</p>
+      <div class="row">
+        <div class="facilities-col">
+          <img src="./resources/images/image.jpg" />
+          <h3>world class library</h3>
+          <p>description</p>
+        </div>
+        <div class="facilities-col">
+          <img src="./resources/images/image.jpg" />
+          <h3>world class library</h3>
+          <p>description</p>
+        </div>
+        <div class="facilities-col">
+          <img src="./resources/images/image.jpg" />
+          <h3>world class library</h3>
+          <p>description</p>
+        </div>
+      </div>
+    </section>
+    <section class="testimonial">
+      <h1>What our student says</h1>
+      <p>information</p>
+      <div class="row">
+        <div class="testimonial-col">
+          <img src="./resources/images/image.jpg" />
+          <p>information</p>
+          <h3>name</h3>
+        </div>
+        <div class="testimonial-col">
+          <img src="./resources/images/image.jpg" />
+          <p>information</p>
+          <h3>name</h3>
+        </div>
+        <div class="testimonial-col">
+          <img src="./resources/images/image.jpg" />
+          <p>information</p>
+          <h3>name</h3>
+        </div>
+      </div>
+    </section>
+    <!-- Call to Action -->
+    <section class="cta">
+      <h1>Enroll</h1>
+      <a ref="" class="btn">CONTACT US</a>
+    </section>
+    <!-- footer -->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>information</p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Made with<i class="fa fa-heart-o"></i> by easy tutorials</p>
+    </section>
+    <!-- Javascript toggle menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
   </body>
 </html>
